@@ -1,0 +1,200 @@
+
+body {
+  background-color: #E8ECEF;
+
+}
+
+.centered {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+.main_logo img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  /* background-color: transparent; */
+}
+.worker_logo img{
+  width: 200px;
+  height: 100px;
+  margin-bottom: 10px;
+  /* background-color: transparent; */
+
+}
+.client_logo img{
+  width: 200px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+*{
+  margin:0px;
+}
+.Wleft {
+  width: 25%;
+  box-sizing: border-box;
+  height: 100vh;
+  float: left;
+  background-color: rgb(24, 24, 68);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.Wright {
+  width: 75%;
+  height: 100vh;
+  background-color: rgb(14, 14, 39);
+  float: left;
+  overflow: auto;
+}
+
+.Wimage {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Wname {
+  margin:10px;
+  font-size: 20;
+}
+
+.Wbio {
+  text-align: center;
+}
+
+.Wconnect-button {
+  padding: 10px 20px;
+  border-radius: 10px 10px;
+  border: solid 1px black;
+}
+
+.Wnav {
+  margin: 15px 20px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Wnav h3 {
+  margin: 0px
+}
+
+.Wlinks a {
+  text-decoration: none;
+  color: gray;
+  margin: 0px 8px;
+}
+
+.Wlinks :hover {
+  color: black;
+  transition: ease-in 10ms;
+  font-weight: 500;
+
+}
+
+.Wcontent {
+  /* display: flex; */
+  color: white;
+  margin: 30px 15px;
+  text-align: justify;
+}
+
+.Wclient{
+  margin:3vh;
+  display: flex;
+  flex-direction: row;
+  border : 2px solid red;
+  background-color: rgb(77, 93, 147);
+  /* width: 500px; */
+}
+.WclientImage{
+  margin: 2vw;
+}
+.Winfo{
+  margin:2vw;
+  font-size: larger;
+}
+.fnote  
+ {  margin-top: 10vh;
+     text-align: center;  
+     height: 80px;  
+     background: -webkit-linear-gradient(left, #0072ff, #8811c5);  
+     color: #fff;  
+     font-weight: bold;  
+     line-height: 80px;  
+ }  
+ .fbody {  
+   margin: 0;  
+   font-family: 'Lato', sans-serif;  
+   font-size: 12px;  
+   line-height: 1.8em;  
+   text-transform: none;  
+   letter-spacing: .075em;  
+   font-weight: bold;  
+   font-style: normal;  
+   text-decoration: none;  
+   color: #e7bd74;  
+   background-color: rgba(34,28,28);  
+   display: block;  
+ }  
+ .ftitle {  
+   margin-top: 2rem;  
+   margin-bottom: 1rem;  
+ }  
+ .fform-content  
+ {  
+     padding: 5%;  
+     border: 1px solid #ced4da;  
+     margin-bottom: 2%;  
+ }  
+ .fform-control {  
+     border-radius: 1.5rem;  
+ }  
+ .btnSubmit  
+ {  
+     border: none;  
+     border-radius: 1.5rem;  
+     padding: 1%;  
+     width: 20%;  
+     cursor: pointer;  
+     background: #0062cc;  
+     color: #fff;  
+ }  
+ .fh1 {  
+     font-family: sans-serif;  
+   display: block;  
+   font-size: 1rem;  
+   font-weight: bold;  
+   text-align: center;  
+   letter-spacing: 3px;  
+   color: hotpink;  
+  text-transform: uppercase;  
+ padding-top: 20px;  
+ }  
+ .fa {  
+   text-decoration: none;  
+   color: #fff;  
+ }  
+ .fa:hover {  
+   text-decoration: none;  
+   color: #fff;  
+ }  
