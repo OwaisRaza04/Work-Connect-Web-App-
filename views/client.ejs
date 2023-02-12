@@ -1,80 +1,101 @@
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
-</head>
-<body style="background-color: #E8ECEF;">
-    <div  class="Wleft" style="background-color: #609EA2;">
-        <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
-            alt="Profile Picture" class="Wimage">
+<%- include('partials/header') %>
+<div class="container rounded bg-white mt-5 mb-5 pad">
+    <div class="row">
+        <div class="col-md-3 border-right">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+        <span class="font-weight-bold">
+            <%=ClientName%>
+        </span>
+        <span class="text-black-50">
+            <%=email%>
+        </span>
+        </div>
+        <div class="edit">
+            <button type="submit"><a href="C-form">Edit</a></button>
+        </div>
+        </div>
         
-              
-        
-        <p class="Wbio">
-           
-            Name : Owais<br>
-            Mobile Number : 90759744<br>
-            Address : firdous colony<br>
+        <form action="/client" method="POST">
+        <div class="col-md-16 border-right">
+            <div class="p-3 py-5 adjust">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Hire Top-Notch Workers</h4>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6"><label class="labels">Date</label><input type="text" class="form-control" placeholder="12/02/2022" name="date"></div>
+                    <div class="col-md-6"><label class="labels">Work Domain</label><input type="text" class="form-control" name="domain" placeholder="domain"></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12"><label class="labels">Work Description</label><input type="text" class="form-control" placeholder=" I want to get my tubelight replaced" name="description"></div>
+                    <div class="col-md-12"><label class="labels">Fees you will Pay</label><input type="text" class="form-control" placeholder="Rs.500" name="fees"></div>
+                    <!-- <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
+                    <div class="col-md-12"><label class="labels">Postcode</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
+                    <div class="col-md-12"><label class="labels">State</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
+                    <div class="col-md-12"><label class="labels">Area</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
+                    <div class="col-md-12"><label class="labels">Email ID</label><input type="text" class="form-control" placeholder="enter email id" value=""></div>
+                    <div class="col-md-12"><label class="labels">Education</label><input type="text" class="form-control" placeholder="education" value=""></div> -->
+                </div>
+                <!-- <div class="row mt-3">
+                    <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value=""></div>
+                    <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="" placeholder="state"></div>
+                </div> -->
+                <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit" >Submit Work</button></div>
+            </div>
             
-        </p>
-        <button class="Wconnect-button">Edit</button>
-    </div>
-    <div class="Wright">
-        <div class="Wcontent">
-            <div class="Wclient">
-                <div class="Wimg"><img
-                        src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?w=360"
-                        alt="Profile Picture" class="Wimage clientImage"></div>
-                <div class="Winfo">
-                    Name : Chinmay<br><br>
-                    Job Type: Driver<br><br>
-                    Job Description: Trip of Pune to Mumbai of 10 people<br><br>
-                    <button class="Wconnect-button">Apply</button>
+        </div>
+    </form>
+        <div class="col-md-4">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center experience"><span>Previous Works
+                </span></div><br>
+                <!-- <div class="previous-work">
+                    <p>some text goes here   <button>Done</button></p> 
+                </div> -->
+                <div class="previous-work">
+                    <div>
+                        <p>some text goes here..</p>
+                    </div>
+                    <div>
+                        <button type="button">Done</button>
+                    </div>
                 </div>
-            </div>
-            <!-- <div class="Wclient">
-                <div class="img"><img
-                        src="https://c1.wallpaperflare.com/preview/711/14/431/smile-profile-face-male.jpg"
-                        alt="Profile Picture" class="image clientImage"></div>
-                <div class="info">
-                    Name : Harsh<br><br>
-                    Job Type: Mechanic<br><br>
-                    Job Description : Repairing brakes of car<br><br>
-                    <button class="connect-button">Apply</button>
-                </div>
-            </div>
-            <div class="client">
-                <div class="img"><img
-                        src="https://c1.wallpaperflare.com/preview/711/14/431/smile-profile-face-male.jpg"
-                        alt="Profile Picture" class="image clientImage"></div>
-                <div class="info">
-                    Name : Harsh<br><br>
-                    Job Type: Maid<br><br>
-                    Job Description : Maid for cooking<br><br>
-                    <button class="connect-button">Apply</button>
-                </div>
-            </div>
-            <div class="client">
-                <div class="img"><img
-                        src="https://c1.wallpaperflare.com/preview/711/14/431/smile-profile-face-male.jpg"
-                        alt="Profile Picture" class="image clientImage"></div>
-                <div class="info">
-                    Name : Harsh<br><br>
-                    Job Type : Electrician<br><br>
-                    Job Description: Repairing Fan<br><br>
-                    <button class="connect-button">Apply</button>
-                </div>
-            </div> -->
 
+                <div class="previous-work">
+                    <div>
+                        <p>some text goes here..</p>
+                    </div>
+                    <div>
+                        <button type="button">Done</button>
+                    </div>
+                </div>
 
+                <div class="previous-work">
+                    <div>
+                        <p>some text goes here..</p>
+                    </div>
+                    <div>
+                        <button type="button">Pending</button>
+                    </div>
+                </div>
+            
+                <div class="previous-work">
+                    <div>
+                        <p>some text goes here..</p>
+                    </div>
+                
+                    <div>
+                        <button type="button">Done</button>
+                    </div>
+                </div>
+                
+                <!-- <div class="col-md-12"><label class="labels">Experience in Designing</label><input type="text" class="form-control" placeholder="experience" value=""></div> <br>
+                <div class="col-md-12"><label class="labels">Additional Details</label><input type="text" class="form-control" placeholder="additional details" value=""></div> -->
+            </div>
         </div>
     </div>
-</body>
-</html>
+</div>
+</div>
+</div>
 
-
-
+<%- include('partials/footer') %>
+<!-- <span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Experience</span> -->
